@@ -1,6 +1,7 @@
-#!/bin/sh -l
+#!/bin/sh -exc
 
 echo ">>> Running command"
-echo ""
 cd $1
+ls -ltr 
+echo "$2"
 $2
