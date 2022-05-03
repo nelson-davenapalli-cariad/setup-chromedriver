@@ -1,7 +1,9 @@
 #!/bin/sh 
 
 echo ">>> Running command"
-cd $1
+mkdir temp
+cp -r $1 temp
+cd temp
 pwd
 ls -ltr
 echo "$2"
